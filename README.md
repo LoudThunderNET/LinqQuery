@@ -2,6 +2,7 @@
 Реализация сокрытия IQueryable при реализации репозиториев.
 
 ## Использование
+```C#
 var blog = await blogRepository.FindAsync(1);
 
 
@@ -14,3 +15,4 @@ var blogA = await blogRepository
                     b.Title, 
                     b.Posts 
                 }).FirstOrDefault());
+```
