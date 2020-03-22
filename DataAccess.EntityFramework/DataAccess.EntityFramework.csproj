@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\LinqQuery.csproj" />
+    <ProjectReference Include="..\DataAccess.Abstraction\DataAccess.Abstraction.csproj" />
+    <ProjectReference Include="..\LinqQuery.EntityFramework\LinqQuery.EntityFramework.csproj" />
+  </ItemGroup>
+
+</Project>
