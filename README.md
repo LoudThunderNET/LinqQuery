@@ -3,6 +3,8 @@
 
 ## Использование
 var blog = await blogRepository.FindAsync(1);
+
+
 var blogA = await blogRepository
                 .ExcecuteQueryAsync(b => b
                 .Where(t => t.UserId == 2)
